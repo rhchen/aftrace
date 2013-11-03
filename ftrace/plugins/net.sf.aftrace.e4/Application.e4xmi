@@ -3,11 +3,11 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" width="1024" height="768">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspective.0">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000">
-          <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="3000">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="1500">
             <children xsi:type="basic:Part" xmi:id="_fb4H5ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.part.left" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
           </children>
-          <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="7000">
+          <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="8500">
             <children xsi:type="basic:Part" xmi:id="_Gg-XQERiEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.part.right" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part_right"/>
           </children>
         </children>
