@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="net.sf.aftrace.e4"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="clearPersistedState"
+               value="true">
+         </property>
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/net.sf.aftrace.e4/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="net.sf.aftrace.e4">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

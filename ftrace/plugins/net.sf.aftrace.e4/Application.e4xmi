@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fb25wERdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ide.application" bindingContexts="_fb3g0ERdEeONZ9v4Hk-kng">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng">
+      <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng">
+          <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng">
+            <children xsi:type="basic:Part" xmi:id="_fb4H5ERdEeONZ9v4Hk-kng" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_fb3g4ERdEeONZ9v4Hk-kng" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_fb3g4URdEeONZ9v4Hk-kng" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fb3g4kRdEeONZ9v4Hk-kng" label="Open" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" command="_fb3g10RdEeONZ9v4Hk-kng"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fb3g40RdEeONZ9v4Hk-kng" label="Save" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/save_edit.gif" command="_fb3g2kRdEeONZ9v4Hk-kng"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fb3g5ERdEeONZ9v4Hk-kng" label="Quit" command="_fb3g00RdEeONZ9v4Hk-kng"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_fb3g5URdEeONZ9v4Hk-kng" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_fb3g5kRdEeONZ9v4Hk-kng" label="About" command="_fb3g3URdEeONZ9v4Hk-kng"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_fb4H5URdEeONZ9v4Hk-kng">
+      <children xsi:type="menu:ToolBar" xmi:id="_fb4H5kRdEeONZ9v4Hk-kng" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fb4H50RdEeONZ9v4Hk-kng" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" command="_fb3g10RdEeONZ9v4Hk-kng"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_fb4H6ERdEeONZ9v4Hk-kng" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/save_edit.gif" command="_fb3g2kRdEeONZ9v4Hk-kng"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_fb3g1ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.handler.quitCommand" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.handlers.QuitHandler" command="_fb3g00RdEeONZ9v4Hk-kng"/>
+  <handlers xmi:id="_fb3g2ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.handler.openCommand" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.handlers.OpenHandler" command="_fb3g10RdEeONZ9v4Hk-kng"/>
+  <handlers xmi:id="_fb3g20RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.handler.saveCommand" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.handlers.SaveHandler" command="_fb3g2kRdEeONZ9v4Hk-kng"/>
+  <handlers xmi:id="_fb3g3kRdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.handler.aboutCommand" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.handlers.AboutHandler" command="_fb3g3URdEeONZ9v4Hk-kng"/>
+  <bindingTables xmi:id="_fb3g1URdEeONZ9v4Hk-kng" bindingContext="_fb3g0ERdEeONZ9v4Hk-kng">
+    <bindings xmi:id="_fb3g1kRdEeONZ9v4Hk-kng" keySequence="M1+Q" command="_fb3g00RdEeONZ9v4Hk-kng"/>
+    <bindings xmi:id="_fb3g2URdEeONZ9v4Hk-kng" keySequence="M1+O" command="_fb3g10RdEeONZ9v4Hk-kng"/>
+    <bindings xmi:id="_fb3g3ERdEeONZ9v4Hk-kng" keySequence="M1+S" command="_fb3g2kRdEeONZ9v4Hk-kng"/>
+    <bindings xmi:id="_fb3g30RdEeONZ9v4Hk-kng" keySequence="M1+A" command="_fb3g3URdEeONZ9v4Hk-kng"/>
+  </bindingTables>
+  <rootContext xmi:id="_fb3g0ERdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_fb3g0URdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_fb3g0kRdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_fb3g00RdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_fb3g10RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.open" commandName="openCommand"/>
+  <commands xmi:id="_fb3g2kRdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_fb3g3URdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_fb25wkRdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_fb25w0RdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_fb25xERdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_fb25xURdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_fb25xkRdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_fb25x0RdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_fb25yERdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
