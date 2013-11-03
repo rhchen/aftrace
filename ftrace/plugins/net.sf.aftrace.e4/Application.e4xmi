@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fb25wERdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ide.application" bindingContexts="_fb3g0ERdEeONZ9v4Hk-kng">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" width="500" height="400">
-    <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng">
-      <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng">
-          <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng">
-            <children xsi:type="basic:Part" xmi:id="_fb4H5ERdEeONZ9v4Hk-kng" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" width="1024" height="768">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspectivestack.0">
+      <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspective.0">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000">
+          <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="3000">
+            <children xsi:type="basic:Part" xmi:id="_fb4H5ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.part.left" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
+          </children>
+          <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="7000">
+            <children xsi:type="basic:Part" xmi:id="_Gg-XQERiEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.part.right" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part_right"/>
           </children>
         </children>
       </children>
