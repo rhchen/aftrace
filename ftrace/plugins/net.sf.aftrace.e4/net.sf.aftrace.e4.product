@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="net.sf.aftrace.e4" id="net.sf.aftrace.e4.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="net.sf.aftrace.e4" id="net.sf.aftrace.e4.product" application="net.sf.aftrace.e4.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -105,10 +105,12 @@
    </plugins>
 
    <features>
-      <feature id="net.sf.aftrace.feature" version="1.0.0.qualifier"/>
       <feature id="org.eclipse.e4.rcp" version="1.2.1.v20130910-2014"/>
       <feature id="org.eclipse.emf.common" version="2.9.1.v20130827-0309"/>
       <feature id="org.eclipse.emf.ecore" version="2.9.1.v20130827-0309"/>
+      <feature id="net.sf.aftrace.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.linuxtools.tmf" version="2.1.0.qualifier"/>
+      <feature id="org.eclipse.linuxtools.ctf"/>
    </features>
 
 

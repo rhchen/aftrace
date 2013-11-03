@@ -6,7 +6,7 @@
          point="org.eclipse.core.runtime.products">
       <product
             name="net.sf.aftrace.e4"
-            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+            application="net.sf.aftrace.e4.application">
          <property
                name="clearPersistedState"
                value="true">
@@ -19,7 +19,23 @@
                name="appName"
                value="net.sf.aftrace.e4">
          </property>
+         <property
+               name="applicationXMI"
+               value="net.sf.aftrace.e4/Application.e4xmi">
+         </property>
       </product>
+   </extension>
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="net.sf.aftrace.e4.application.Application">
+         </run>
+      </application>
    </extension>
 
 </plugin>
