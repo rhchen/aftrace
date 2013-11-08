@@ -1,21 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fb25wERdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ide.application" bindingContexts="_fb3g0ERdEeONZ9v4Hk-kng">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" width="1280" height="768">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspective.0">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000" horizontal="true">
-          <children xsi:type="basic:PartSashContainer" xmi:id="_GmLUUEhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.0" containerData="2000">
-            <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="7000">
-              <children xsi:type="advanced:Placeholder" xmi:id="_Os9_IESgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_HI6-4ESgEeO-tJdICwAlaA"/>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_GmLUUEhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.0" containerData="7000" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_eT7pcEhwEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partsashcontainer.2" containerData="2000">
+              <children xsi:type="basic:PartStack" xmi:id="_D7vi0EhyEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.0" containerData="3000">
+                <children xsi:type="advanced:Placeholder" xmi:id="_FuG4UEhyEeOA0MdhsJyF5A" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_HI6-4ESgEeO-tJdICwAlaA" closeable="true"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_KJ8xgEhyEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.2" containerData="6000">
+                <children xsi:type="advanced:Placeholder" xmi:id="_K54ZoEhyEeOA0MdhsJyF5A" elementId="org.eclipse.ui.views.PropertySheet" ref="_ag1nwEhvEeO3jb91zVyW3A" closeable="true"/>
+              </children>
             </children>
-            <children xsi:type="basic:PartStack" xmi:id="_Hz6A0EhqEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partstack.0" containerData="3000">
-              <children xsi:type="advanced:Placeholder" xmi:id="_zMkJYEhpEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.placeholder.0" containerData="" ref="_ww8bgEhpEeO3jb91zVyW3A" closeable="true"/>
+            <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="8000">
+              <children xsi:type="basic:Part" xmi:id="_5X8CUEhwEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.part.0" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
             </children>
           </children>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_HGJ04EhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.1" containerData="8000">
-            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_Hmg4kNSjEeGwXp2p959l3w" closeable="true"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_HGJ04EhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.1" containerData="3000" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_Qsa1cEhxEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.1" containerData="2000">
+              <children xsi:type="advanced:Placeholder" xmi:id="_TS_PEEhxEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.placeholder.0" ref="_ww8bgEhpEeO3jb91zVyW3A" closeable="true"/>
+            </children>
+            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_Hmg4kNSjEeGwXp2p959l3w" closeable="true"/>
             <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="3000">
-              <children xsi:type="basic:Part" xmi:id="_Gg-XQERiEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.part.right" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part_right"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_bK1VEEhxEeOA0MdhsJyF5A" elementId="org.eclipse.ui.console.ConsoleView" ref="_156U4EhzEeOA0MdhsJyF5A" closeable="true"/>
+              <children xsi:type="advanced:Placeholder" xmi:id="_deINYEhxEeOA0MdhsJyF5A" elementId="org.eclipse.ui.views.ProgressView" ref="_kAVoEEhvEeO3jb91zVyW3A" closeable="true"/>
             </children>
           </children>
         </children>
@@ -38,7 +47,7 @@
         <tags>EditorStack</tags>
       </children>
     </sharedElements>
-    <sharedElements xsi:type="basic:Part" xmi:id="_HI6-4ESgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%Common_Resource_Navigator" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources//icons/full/eview16/resource_persp.gif" closeable="true">
+    <sharedElements xsi:type="basic:Part" xmi:id="_HI6-4ESgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%Common_Resource_Navigator" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.ui</tags>
       <menus xmi:id="_HI6-4USgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
@@ -53,6 +62,30 @@
         <tags>ViewMenu</tags>
       </menus>
       <toolbar xmi:id="_ww8bgkhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_ag1nwEhvEeO3jb91zVyW3A" elementId="org.eclipse.ui.views.PropertySheet" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%Views.PropertySheet" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/prop_ps.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.ui</tags>
+      <menus xmi:id="_ag1nwUhvEeO3jb91zVyW3A" elementId="org.eclipse.ui.views.PropertySheet">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_ag1nwkhvEeO3jb91zVyW3A" elementId="org.eclipse.ui.views.PropertySheet"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_kAVoEEhvEeO3jb91zVyW3A" elementId="org.eclipse.ui.views.ProgressView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%Views.Progress" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/pview.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.ui</tags>
+      <menus xmi:id="_kAVoEUhvEeO3jb91zVyW3A" elementId="org.eclipse.ui.views.ProgressView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_kAVoEkhvEeO3jb91zVyW3A" elementId="org.eclipse.ui.views.ProgressView"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_156U4EhzEeOA0MdhsJyF5A" elementId="org.eclipse.ui.console.ConsoleView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%ConsoleView.name" iconURI="platform:/plugin/org.eclipse.ui.console/icons/full/cview16/console_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.ui</tags>
+      <menus xmi:id="_156U4UhzEeOA0MdhsJyF5A" elementId="org.eclipse.ui.console.ConsoleView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_156U4khzEeOA0MdhsJyF5A" elementId="org.eclipse.ui.console.ConsoleView"/>
     </sharedElements>
     <trimBars xmi:id="_fb4H5URdEeONZ9v4Hk-kng">
       <children xsi:type="menu:ToolBar" xmi:id="_fb4H5kRdEeONZ9v4Hk-kng" elementId="toolbar:org.eclipse.ui.main.toolbar">
@@ -75,25 +108,25 @@
     <children xmi:id="_fb3g0URdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
     <children xmi:id="_fb3g0kRdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
   </rootContext>
-  <descriptors xmi:id="_gfroQESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" label="%Common_Resource_Navigator" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources//icons/full/eview16/resource_persp.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_gfroQESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" label="%Common_Resource_Navigator" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_gfroQUSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_gfroQkSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer"/>
   </descriptors>
-  <descriptors xmi:id="_rJdDUESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.console.ConsoleView" label="%ConsoleView.name" iconURI="platform:/plugin/org.eclipse.ui.console//icons/full/cview16/console_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_rJdDUESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.console.ConsoleView" label="%ConsoleView.name" iconURI="platform:/plugin/org.eclipse.ui.console/icons/full/cview16/console_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_rJdDUUSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.console.ConsoleView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_rJdDUkSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.console.ConsoleView"/>
   </descriptors>
-  <descriptors xmi:id="_xcsjAESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.ProgressView" label="%Views.Progress" iconURI="platform:/plugin/org.eclipse.ui.ide//icons/full/eview16/pview.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_xcsjAESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.ProgressView" label="%Views.Progress" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/pview.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_xcsjAUSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.ProgressView">
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_xcsjAkSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.ProgressView"/>
   </descriptors>
-  <descriptors xmi:id="_98QbAESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.PropertySheet" label="%Views.PropertySheet" iconURI="platform:/plugin/org.eclipse.ui.views//icons/full/eview16/prop_ps.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+  <descriptors xmi:id="_98QbAESfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.PropertySheet" label="%Views.PropertySheet" iconURI="platform:/plugin/org.eclipse.ui.views/icons/full/eview16/prop_ps.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
     <menus xmi:id="_98QbAUSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.PropertySheet">
       <tags>ViewMenu</tags>
     </menus>
