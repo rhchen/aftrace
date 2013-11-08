@@ -4,12 +4,19 @@
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspective.0">
         <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="1500">
-            <children xsi:type="basic:Part" xmi:id="_fb4H5ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.part.left" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
-            <children xsi:type="advanced:Placeholder" xmi:id="_Os9_IESgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_HI6-4ESgEeO-tJdICwAlaA"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_GmLUUEhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.0" containerData="2000">
+            <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="7000">
+              <children xsi:type="advanced:Placeholder" xmi:id="_Os9_IESgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_HI6-4ESgEeO-tJdICwAlaA"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_Hz6A0EhqEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partstack.0" containerData="3000">
+              <children xsi:type="advanced:Placeholder" xmi:id="_zMkJYEhpEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.placeholder.0" containerData="" ref="_ww8bgEhpEeO3jb91zVyW3A" closeable="true"/>
+            </children>
           </children>
-          <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="8500">
-            <children xsi:type="basic:Part" xmi:id="_Gg-XQERiEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.part.right" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part_right"/>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_HGJ04EhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.1" containerData="8000">
+            <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_Hmg4kNSjEeGwXp2p959l3w" closeable="true"/>
+            <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="3000">
+              <children xsi:type="basic:Part" xmi:id="_Gg-XQERiEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.part.right" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part_right"/>
+            </children>
           </children>
         </children>
       </children>
@@ -24,6 +31,13 @@
         <children xsi:type="menu:HandledMenuItem" xmi:id="_fb3g5kRdEeONZ9v4Hk-kng" label="About" command="_fb3g3URdEeONZ9v4Hk-kng"/>
       </children>
     </mainMenu>
+    <sharedElements xsi:type="advanced:Area" xmi:id="_Hmg4kNSjEeGwXp2p959l3w" elementId="org.eclipse.ui.editorss">
+      <children xsi:type="basic:PartStack" xmi:id="_HmhfoNSjEeGwXp2p959l3w" elementId="org.eclipse.e4.primaryDataStack">
+        <tags>newtablook</tags>
+        <tags>org.eclipse.e4.primaryDataStack</tags>
+        <tags>EditorStack</tags>
+      </children>
+    </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_HI6-4ESgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%Common_Resource_Navigator" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources//icons/full/eview16/resource_persp.gif" closeable="true">
       <tags>View</tags>
       <tags>categoryTag:org.eclipse.ui</tags>
@@ -31,6 +45,14 @@
         <tags>ViewMenu</tags>
       </menus>
       <toolbar xmi:id="_HI6-4kSgEeO-tJdICwAlaA" elementId="org.eclipse.ui.navigator.ProjectExplorer"/>
+    </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_ww8bgEhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="%View.RemoteSystems" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/system_view.gif" closeable="true">
+      <tags>View</tags>
+      <tags>categoryTag:org.eclipse.rse.ui.view</tags>
+      <menus xmi:id="_ww8bgUhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView">
+        <tags>ViewMenu</tags>
+      </menus>
+      <toolbar xmi:id="_ww8bgkhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView"/>
     </sharedElements>
     <trimBars xmi:id="_fb4H5URdEeONZ9v4Hk-kng">
       <children xsi:type="menu:ToolBar" xmi:id="_fb4H5kRdEeONZ9v4Hk-kng" elementId="toolbar:org.eclipse.ui.main.toolbar">
@@ -76,6 +98,12 @@
       <tags>ViewMenu</tags>
     </menus>
     <toolbar xmi:id="_98QbAkSfEeO-tJdICwAlaA" elementId="org.eclipse.ui.views.PropertySheet"/>
+  </descriptors>
+  <descriptors xmi:id="_qFU4EEhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView" label="%View.RemoteSystems" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/system_view.gif" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <menus xmi:id="_qFU4EUhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView">
+      <tags>ViewMenu</tags>
+    </menus>
+    <toolbar xmi:id="_qFU4EkhpEeO3jb91zVyW3A" elementId="org.eclipse.rse.ui.view.systemView"/>
   </descriptors>
   <commands xmi:id="_fb3g00RdEeONZ9v4Hk-kng" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
   <commands xmi:id="_fb3g10RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.open" commandName="openCommand"/>
