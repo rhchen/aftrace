@@ -117,6 +117,7 @@
       <feature id="org.eclipse.rse.telnet" version="2.3.100.201305201712"/>
       <feature id="org.eclipse.linuxtools.lttng2.kernel" version="2.1.0.qualifier"/>
       <feature id="net.sf.lttng2.feature" version="1.0.0.qualifier"/>
+      <feature id="net.sf.nexuslite.feature" version="1.0.0.qualifier"/>
    </features>
 
 

@@ -1,10 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Lttng2 Kernel UI
-Bundle-SymbolicName: net.sf.lttng2.kernel.ui;singleton:=true
+Bundle-Name: Nexuslite
+Bundle-SymbolicName: net.sf.nexuslite;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: net.sf.aftrace
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
 Require-Bundle: javax.inject;bundle-version="1.0.0",
  org.eclipse.core.expressions;bundle-version="3.4.401",
  org.eclipse.core.runtime;bundle-version="3.8.0",
@@ -17,6 +18,8 @@ Require-Bundle: javax.inject;bundle-version="1.0.0",
  org.eclipse.e4.ui.workbench;bundle-version="0.11.0",
  org.eclipse.e4.ui.di;bundle-version="0.10.1",
  org.eclipse.e4.ui.services;bundle-version="0.10.3",
- org.eclipse.linuxtools.lttng2.kernel.ui;bundle-version="2.1.0"
-Bundle-ActivationPolicy: lazy
+ org.eclipse.linuxtools.tmf.core;bundle-version="2.2.0",
+ org.eclipse.linuxtools.tmf.ui;bundle-version="2.2.0",
+ org.eclipse.core.resources;bundle-version="3.8.101"
 Import-Package: javax.annotation;version="1.1.0"
+ 

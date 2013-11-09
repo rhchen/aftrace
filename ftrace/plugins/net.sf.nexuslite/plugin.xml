@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="id1"
+         point="org.eclipse.e4.workbench.model">
+      <fragment
+            uri="fragment.e4xmi">
+      </fragment>
+   </extension>
+   <extension
+         point="org.eclipse.linuxtools.tmf.ui.tracetype">
+      <type
+            event_type="org.eclipse.linuxtools.tmf.core.event.TmfEvent"
+            icon="icons/sample_decorator.gif"
+            id="net.sf.nexuslite.type1"
+            name="NexusLite"
+            trace_type="net.sf.nexuslite.NexusTrace">
+      </type>
+   </extension>
+
+</plugin>
