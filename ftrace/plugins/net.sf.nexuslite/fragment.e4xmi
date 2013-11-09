@@ -10,4 +10,9 @@
       <toolbar xmi:id="_dYNPgEkJEeOgbJfKvzc2aA" elementId="net.sf.lttng2.kernel.ui.toolbar.0"/>
     </elements>
   </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_1vMJMElQEeOa-cH-bCIPAA" featurename="children" parentElementId="net.sf.aftrace.e4.partstack.tp_views">
+    <elements xsi:type="basic:Part" xmi:id="_54CN4ElQEeOa-cH-bCIPAA" elementId="net.sf.nexuslite.part.0" contributionURI="bundleclass://net.sf.nexuslite/net.sf.nexuslite.NexusChart" label="Nexus Chart" closeable="true">
+      <toolbar xmi:id="_CGdn4ElREeOa-cH-bCIPAA" elementId="net.sf.nexuslite.toolbar.0"/>
+    </elements>
+  </fragments>
 </fragment:ModelFragments>

@@ -21,6 +21,8 @@ import java.io.IOException;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileChannel.MapMode;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.eclipse.core.resources.IProject;
 import org.eclipse.core.resources.IResource;
@@ -32,14 +34,23 @@ import org.eclipse.linuxtools.tmf.core.event.TmfEvent;
 import org.eclipse.linuxtools.tmf.core.event.TmfEventField;
 import org.eclipse.linuxtools.tmf.core.event.TmfEventType;
 import org.eclipse.linuxtools.tmf.core.exceptions.TmfTraceException;
+import org.eclipse.linuxtools.tmf.core.request.ITmfDataRequest.ExecutionType;
+import org.eclipse.linuxtools.tmf.core.request.TmfEventRequest;
+import org.eclipse.linuxtools.tmf.core.signal.TmfSignalHandler;
+import org.eclipse.linuxtools.tmf.core.signal.TmfSignalManager;
+import org.eclipse.linuxtools.tmf.core.signal.TmfTraceSelectedSignal;
 import org.eclipse.linuxtools.tmf.core.timestamp.ITmfTimestamp;
+import org.eclipse.linuxtools.tmf.core.timestamp.TmfTimeRange;
 import org.eclipse.linuxtools.tmf.core.timestamp.TmfTimestamp;
 import org.eclipse.linuxtools.tmf.core.trace.ITmfContext;
 import org.eclipse.linuxtools.tmf.core.trace.ITmfEventParser;
 import org.eclipse.linuxtools.tmf.core.trace.ITmfLocation;
+import org.eclipse.linuxtools.tmf.core.trace.ITmfTrace;
 import org.eclipse.linuxtools.tmf.core.trace.TmfContext;
 import org.eclipse.linuxtools.tmf.core.trace.TmfLongLocation;
 import org.eclipse.linuxtools.tmf.core.trace.TmfTrace;
+import org.eclipse.linuxtools.tmf.core.trace.TmfTraceManager;
+import org.eclipse.swt.widgets.Display;
 
 /**
  * Nexus trace type
@@ -240,4 +251,87 @@ public class NexusTrace extends TmfTrace implements ITmfEventParser {
         }
         return event;
     }
+    
+    ITmfTrace currentTrace;
+    
+    /**
+     * Reference to the trace manager
+     * @since 2.0
+     */
+    protected final TmfTraceManager fTraceManager;
+    
+	public NexusTrace() {
+		super();
+		fTraceManager = TmfTraceManager.getInstance();
+	    TmfSignalManager.register(this);
+	}
+
+	@TmfSignalHandler
+	public void traceSelected(final TmfTraceSelectedSignal signal) {
+
+		System.out.println("NexusTrace traceSelected "+ signal);
+		
+		// Don't populate the view again if we're already showing this trace
+		if (currentTrace == signal.getTrace()) {
+			return;
+		}
+		
+		currentTrace = signal.getTrace();
+
+		// Create the request to get data from the trace
+		 TmfEventRequest req = new TmfEventRequest(TmfEvent.class,
+	                TmfTimeRange.ETERNITY, TmfEventRequest.ALL_DATA,
+	                ExecutionType.BACKGROUND) {
+
+	            ArrayList<Double> xValues = new ArrayList<Double>();
+	            ArrayList<Double> yValues = new ArrayList<Double>();
+
+	            @Override
+	            public void handleData(ITmfEvent data) {
+	                // Called for each event
+	                super.handleData(data);
+	                ITmfEventField field = data.getContent().getField("value");
+	                if (field != null) {
+	                	
+	                	int value = (Integer) field.getValue();
+	                	yValues.add((double) value);
+	                    xValues.add((double) data.getTimestamp().getValue());
+	                }
+	            }
+
+	            @Override
+	            public void handleSuccess() {
+	                // Request successful, not more data available
+	                super.handleSuccess();
+
+	                final double x[] = toArray(xValues);
+	                final double y[] = toArray(yValues);
+
+	                // This part needs to run on the UI thread since it updates the chart SWT control
+	                Display.getDefault().asyncExec(new Runnable() {
+
+	                    @Override
+	                    public void run() {
+	                       
+	                    }
+
+	                });
+	            }
+
+	            /**
+	             * Convert List<Double> to double[]
+	             */
+	            private double[] toArray(List<Double> list) {
+	                double[] d = new double[list.size()];
+	                for (int i = 0; i < list.size(); ++i) {
+	                    d[i] = list.get(i);
+	                }
+
+	                return d;
+	            }
+	        };
+		
+		ITmfTrace trace = signal.getTrace();
+		trace.sendRequest(req);
+	}
 }

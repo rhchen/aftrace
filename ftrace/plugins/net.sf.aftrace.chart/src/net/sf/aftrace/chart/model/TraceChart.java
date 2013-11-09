@@ -38,11 +38,11 @@ public class TraceChart extends Chart {
 
 				switch (event.type) {
 					case SWT.MouseEnter:
-						System.out.println("TraceChart : ControlListener : MouseEnter");
+						//System.out.println("TraceChart : ControlListener : MouseEnter");
 						break;
 	
 					case SWT.MouseExit:
-						System.out.println("TraceChart : ControlListener : MouseExit");
+						//System.out.println("TraceChart : ControlListener : MouseExit");
 						break;
 				}
 			}
