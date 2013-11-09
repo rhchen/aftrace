@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fb25wERdEeONZ9v4Hk-kng" elementId="org.eclipse.e4.ide.application" bindingContexts="_fb3g0ERdEeONZ9v4Hk-kng">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_fb25wERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.application" bindingContexts="_fb3g0ERdEeONZ9v4Hk-kng">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_fb25wURdEeONZ9v4Hk-kng" label="net.sf.aftrace.e4" iconURI="platform:/plugin/net.sf.aftrace.e4/icons/sample.gif" width="1280" height="768">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_fb4H4ERdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_fb4H4URdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.perspective.0">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" containerData="10000">
-          <children xsi:type="basic:PartSashContainer" xmi:id="_GmLUUEhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.0" containerData="7000" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_eT7pcEhwEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partsashcontainer.2" containerData="2000">
-              <children xsi:type="basic:PartStack" xmi:id="_D7vi0EhyEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.0" containerData="3000">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_fb4H4kRdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partsashcontainer.00" containerData="10000">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_GmLUUEhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.10" containerData="7000" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_eT7pcEhwEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partsashcontainer.20" containerData="2000">
+              <children xsi:type="basic:PartStack" xmi:id="_D7vi0EhyEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.navigator" containerData="3000">
                 <children xsi:type="advanced:Placeholder" xmi:id="_FuG4UEhyEeOA0MdhsJyF5A" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_HI6-4ESgEeO-tJdICwAlaA" closeable="true"/>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_KJ8xgEhyEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.2" containerData="6000">
+              <children xsi:type="basic:PartStack" xmi:id="_KJ8xgEhyEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.property" containerData="6000">
                 <children xsi:type="advanced:Placeholder" xmi:id="_K54ZoEhyEeOA0MdhsJyF5A" elementId="org.eclipse.ui.views.PropertySheet" ref="_ag1nwEhvEeO3jb91zVyW3A" closeable="true"/>
               </children>
             </children>
-            <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.right" containerData="8000">
+            <children xsi:type="basic:PartStack" xmi:id="_fb4H40RdEeONZ9v4Hk-kng" elementId="net.sf.aftrace.e4.partstack.tp_views" containerData="8000">
               <children xsi:type="basic:Part" xmi:id="_5X8CUEhwEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.part.0" contributionURI="bundleclass://net.sf.aftrace.e4/net.sf.aftrace.e4.parts.SamplePart" label="Sample Part"/>
             </children>
           </children>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_HGJ04EhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.1" containerData="3000" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_Qsa1cEhxEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.1" containerData="2000">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_HGJ04EhoEeO3jb91zVyW3A" elementId="net.sf.aftrace.e4.partsashcontainer.11" containerData="3000" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_Qsa1cEhxEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.partstack.bt_left" containerData="2000">
               <children xsi:type="advanced:Placeholder" xmi:id="_TS_PEEhxEeOA0MdhsJyF5A" elementId="net.sf.aftrace.e4.placeholder.0" ref="_ww8bgEhpEeO3jb91zVyW3A" closeable="true"/>
             </children>
             <children xsi:type="advanced:Placeholder" xmi:id="_hP-EYNS2EeGBn6dQ9VPexA" elementId="org.eclipse.ui.editorss" containerData="5000" ref="_Hmg4kNSjEeGwXp2p959l3w" closeable="true"/>
-            <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.left" containerData="3000">
+            <children xsi:type="basic:PartStack" xmi:id="_pCangERhEeO-tJdICwAlaA" elementId="net.sf.aftrace.e4.partstack.bt_right" containerData="3000">
               <children xsi:type="advanced:Placeholder" xmi:id="_bK1VEEhxEeOA0MdhsJyF5A" elementId="org.eclipse.ui.console.ConsoleView" ref="_156U4EhzEeOA0MdhsJyF5A" closeable="true"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_deINYEhxEeOA0MdhsJyF5A" elementId="org.eclipse.ui.views.ProgressView" ref="_kAVoEEhvEeO3jb91zVyW3A" closeable="true"/>
             </children>
