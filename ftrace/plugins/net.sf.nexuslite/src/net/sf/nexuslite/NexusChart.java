@@ -225,6 +225,20 @@ public class NexusChart {
 	            }
 
 	            @Override
+				public void handleSuccess() {
+					// Request successful, not more data available
+					super.handleSuccess();
+
+					final double x[] = toArray(xValues);
+					final double y[] = toArray(yValues);
+
+					System.out.println("x[] "+ x.length +" "+ x[0] +" "+ x[1] +" "+ x[2]);
+					System.out.println("y[] "+ y.length +" "+ y[0] +" "+ y[1] +" "+ y[2]);
+				}
+	            
+	            /* For update Chart
+	             * 
+	            @Override
 	            public void handleSuccess() {
 	                // Request successful, not more data available
 	                super.handleSuccess();
@@ -251,7 +265,8 @@ public class NexusChart {
 
 	                });
 	            }
-
+				*/
+	            
 	            /**
 	             * Convert List<Double> to double[]
 	             */
