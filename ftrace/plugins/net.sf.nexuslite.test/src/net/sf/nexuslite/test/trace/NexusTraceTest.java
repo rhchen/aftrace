@@ -18,6 +18,7 @@ import org.eclipse.linuxtools.tmf.core.component.ITmfDataProvider;
 import org.eclipse.linuxtools.tmf.core.event.ITmfEvent;
 import org.eclipse.linuxtools.tmf.core.event.ITmfEventField;
 import org.eclipse.linuxtools.tmf.core.exceptions.TmfTraceException;
+import org.eclipse.linuxtools.tmf.core.request.TmfDataRequest;
 import org.eclipse.linuxtools.tmf.core.request.TmfEventRequest;
 import org.eclipse.linuxtools.tmf.core.timestamp.TmfTimeRange;
 import org.eclipse.linuxtools.tmf.core.timestamp.TmfTimestamp;
@@ -44,11 +45,151 @@ public class NexusTraceTest {
 	public void tearDown() throws Exception {
 	}
 
-	//@Test
-	public void test() {
-		fail("Not yet implemented");
+	@Test
+	public void testProcessEventRequestForNbEvents()
+			throws InterruptedException {
+		
+		final int blockSize = 100;
+		final int nbEvents = 1000;
+		final Vector<ITmfEvent> requestedEvents = new Vector<ITmfEvent>();
+
+		final TmfTimeRange range = new TmfTimeRange(TmfTimestamp.BIG_BANG,TmfTimestamp.BIG_CRUNCH);
+		
+		final TmfEventRequest request = new TmfEventRequest(ITmfEvent.class,range, nbEvents, blockSize) {
+			
+			@Override
+			public void handleData(final ITmfEvent event) {
+				super.handleData(event);
+				requestedEvents.add(event);
+			}
+		};
+		
+		final ITmfDataProvider[] providers = TmfProviderManager.getProviders(ITmfEvent.class, NexusTrace.class);
+		providers[0].sendRequest(request);
+		request.waitForCompletion();
+
+		assertEquals("nbEvents", nbEvents, requestedEvents.size());
+		assertTrue("isCompleted", request.isCompleted());
+		assertFalse("isCancelled", request.isCancelled());
+
+		// Ensure that we have distinct events.
+		// Don't go overboard: we are not validating the stub!
+		for (int i = 0; i < nbEvents; i++) {
+			assertNotEquals("Distinct events", i + 1, requestedEvents.get(i)
+					.getTimestamp().getValue());
+		}
 	}
 
+	@Test
+	public void testProcessEventRequestForSomeEvents()
+			throws InterruptedException {
+		
+		final int blockSize = 1;
+		final long startTime = 100;
+		final int nbEvents = 1000;
+		final Vector<ITmfEvent> requestedEvents = new Vector<ITmfEvent>();
+
+		final TmfTimeRange range = new TmfTimeRange(new TmfTimestamp(startTime,SCALE), TmfTimestamp.BIG_CRUNCH);
+		
+		final TmfEventRequest request = new TmfEventRequest(ITmfEvent.class,
+				range, nbEvents, blockSize) {
+			
+			@Override
+			public void handleData(final ITmfEvent event) {
+				super.handleData(event);
+				requestedEvents.add(event);
+			}
+		};
+		
+		final ITmfDataProvider[] providers = TmfProviderManager.getProviders(ITmfEvent.class, NexusTrace.class);
+		
+		providers[0].sendRequest(request);
+		request.waitForCompletion();
+
+		assertEquals("nbEvents", nbEvents, requestedEvents.size());
+		assertTrue("isCompleted", request.isCompleted());
+		assertFalse("isCancelled", request.isCancelled());
+
+		// Ensure that we have distinct events.
+		// Don't go overboard: we are not validating the stub!
+		for (int i = 1; i < nbEvents; i++) {
+			
+			assertNotEquals("Distinct events", 
+					requestedEvents.get(i-1).getTimestamp().getValue(),
+					requestedEvents.get(i).getTimestamp().getValue());
+		}
+	}
+
+	// @Test
+	public void testProcessEventRequestForOtherEvents()
+			throws InterruptedException {
+		
+		final int blockSize = 1;
+		final int startIndex = 99;
+		final long startTime = 100;
+		final int nbEvents = 1000;
+		final Vector<ITmfEvent> requestedEvents = new Vector<ITmfEvent>();
+
+		final TmfTimeRange range = new TmfTimeRange(new TmfTimestamp(startTime,SCALE), TmfTimestamp.BIG_CRUNCH);
+		
+		final TmfEventRequest request = new TmfEventRequest(ITmfEvent.class,range, startIndex, nbEvents, blockSize) {
+			
+			@Override
+			public void handleData(final ITmfEvent event) {
+				super.handleData(event);
+				requestedEvents.add(event);
+			}
+		};
+		
+		final ITmfDataProvider[] providers = TmfProviderManager.getProviders(ITmfEvent.class, NexusTrace.class);
+		providers[0].sendRequest(request);
+		request.waitForCompletion();
+
+		assertEquals("nbEvents", nbEvents, requestedEvents.size());
+		assertTrue("isCompleted", request.isCompleted());
+		assertFalse("isCancelled", request.isCancelled());
+
+		// Ensure that we have distinct events.
+		// Don't go overboard: we are not validating the stub!
+		for (int i = 1; i < nbEvents; i++) {
+			assertNotEquals("Distinct events", 
+					requestedEvents.get(i-1).getTimestamp().getValue(),
+					requestedEvents.get(i).getTimestamp().getValue());
+		}
+	}
+
+	// @Test
+	public void testProcessDataRequestForSomeEvents()
+			throws InterruptedException {
+		final int startIndex = 100;
+		final int nbEvents = 1000;
+		final Vector<ITmfEvent> requestedEvents = new Vector<ITmfEvent>();
+
+		final TmfDataRequest request = new TmfDataRequest(ITmfEvent.class,startIndex, nbEvents) {
+			
+			@Override
+			public void handleData(final ITmfEvent event) {
+				super.handleData(event);
+				requestedEvents.add(event);
+			}
+		};
+		final ITmfDataProvider[] providers = TmfProviderManager.getProviders(ITmfEvent.class, NexusTrace.class);
+		providers[0].sendRequest(request);
+		request.waitForCompletion();
+
+		assertEquals("nbEvents", nbEvents, requestedEvents.size());
+		assertTrue("isCompleted", request.isCompleted());
+		assertFalse("isCancelled", request.isCancelled());
+
+		// Ensure that we have distinct events.
+		// Don't go overboard: we are not validating the stub!
+		for (int i = 1; i < nbEvents; i++) {
+			assertNotEquals("Distinct events", 
+					requestedEvents.get(i-1).getTimestamp().getValue(),
+					requestedEvents.get(i).getTimestamp().getValue());
+		}
+	}
+	
 	@Test
 	public void testProcessEventRequestForAllEvents()
 			throws InterruptedException {
@@ -59,8 +200,8 @@ public class NexusTraceTest {
 
 		final TmfTimeRange range = new TmfTimeRange(TmfTimestamp.BIG_BANG, TmfTimestamp.BIG_CRUNCH);
 		
-		final TmfEventRequest request = new TmfEventRequest(ITmfEvent.class,
-				range, NB_EVENTS, blockSize) {
+		final TmfEventRequest request = new TmfEventRequest(ITmfEvent.class,range, NB_EVENTS, blockSize) {
+			
 			@Override
 			public void handleData(final ITmfEvent event) {
 				super.handleData(event);
@@ -79,13 +220,17 @@ public class NexusTraceTest {
 		assertTrue("isCompleted", request.isCompleted());
 		assertFalse("isCancelled", request.isCancelled());
 
-		for (int i = 0; i < NB_EVENTS; i++) {
+		for (int i = 1; i < NB_EVENTS; i++) {
 			
 			 long timestamp = requestedEvents.get(i).getTimestamp().getValue();
 			 ITmfEventField field = requestedEvents.get(i).getContent().getField("value");
 			 int value = (Integer) field.getValue();
 			 
 			 //System.out.println("event : "+ timestamp +" "+ value);
+			 
+			 assertNotEquals("Distinct events", 
+						requestedEvents.get(i-1).getTimestamp().getValue(),
+						requestedEvents.get(i).getTimestamp().getValue());
 		}
 	}
 	
