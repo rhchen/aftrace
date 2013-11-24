@@ -24,4 +24,5 @@ Require-Bundle: javax.inject;bundle-version="1.0.0",
  net.sf.aftrace.chart;bundle-version="1.0.0",
  net.tourbook.chart;bundle-version="13.9.0"
 Import-Package: javax.annotation;version="1.1.0"
+Export-Package: net.sf.nexuslite
  
