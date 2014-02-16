@@ -8,6 +8,11 @@
   <!-- common settings for all modules -->
 	<properties>
 		<tycho-version>0.17.0</tycho-version>
+		
+		<download-site>http://download.eclipse.org</download-site>
+		<orbit-version>R20130517111416</orbit-version>
+		<orbit-site>${download-site}/tools/orbit/downloads/drops/${orbit-version}/repository</orbit-site>
+		
 	</properties>
 
 	<repositories>
@@ -17,6 +22,12 @@
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/eclipse/updates/4.3</url>
 		</repository>
+		<repository>
+			<id>orbit-${orbit-version}</id>
+			<url>${orbit-site}</url>
+			<layout>p2</layout>
+		</repository>
+		
 	</repositories>
 
 	<build>
@@ -72,5 +83,7 @@
 	<module>
 		../../../ftrace/features/net.sf.aftrace.chart.feature
 	</module>
+	<module>../../../ftrace/features/net.sf.nexuslite.feature</module>
+	<module>../../../ftrace/plugins/net.sf.nexuslite</module>
 	</modules>
 </project>
