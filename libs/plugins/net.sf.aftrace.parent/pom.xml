@@ -85,5 +85,6 @@
 	</module>
 	<module>../../../ftrace/features/net.sf.nexuslite.feature</module>
 	<module>../../../ftrace/plugins/net.sf.nexuslite</module>
+	<module>../../../ftrace/plugins/net.sf.aftrace.e4</module>
 	</modules>
 </project>
