@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="net.sf.aftrace.ftrace.feature"
+      label="FTrace Feature"
+      version="1.0.0.qualifier"
+      provider-name="net.sf.aftrace">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <requires>
+      <import plugin="javax.inject" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.core.di" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.core.contexts" version="1.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.core.di.extensions" version="0.11.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.core.services" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.ui.workbench" version="0.11.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.ui.di" version="0.10.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.osgi.services" version="3.3.100" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime" version="3.8.0" match="greaterOrEqual"/>
+      <import plugin="javax.annotation"/>
+      <import plugin="org.eclipse.core.expressions" version="3.4.401" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.8.101" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.ui" version="3.104.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.core.commands" version="0.10.1" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.e4.ui.services" version="0.10.3" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.linuxtools.tmf.core" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.linuxtools.tmf.ui" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="net.sf.aftrace.ftrace.service" version="1.0.0" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="net.sf.aftrace.ftrace.service"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="net.sf.aftrace.ftrace"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>

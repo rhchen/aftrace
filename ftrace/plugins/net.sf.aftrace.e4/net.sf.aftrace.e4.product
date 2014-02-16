@@ -13,6 +13,18 @@
 
    <windowImages/>
 
+
+   <launcher>
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+      <windows include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</windows>
+   </vm>
+
    <plugins>
       <plugin id="com.ibm.icu"/>
       <plugin id="javax.annotation"/>
@@ -119,6 +131,13 @@
       <feature id="net.sf.lttng2.feature" version="1.0.0.qualifier"/>
       <feature id="net.sf.nexuslite.feature" version="1.0.0.qualifier"/>
       <feature id="net.sf.aftrace.chart.feature" version="1.0.0.qualifier"/>
+      <feature id="net.sf.aftrace.ftrace.feature" version="1.0.0.qualifier"/>
+      <feature id="org.eclipse.rse.ftp"/>
+      <feature id="org.eclipse.rse.local"/>
+      <feature id="org.eclipse.rse.dstore"/>
+      <feature id="org.eclipse.tm.terminal"/>
+      <feature id="org.eclipse.rse"/>
+      <feature id="org.eclipse.linuxtools.lttng2"/>
    </features>
 
 
