@@ -97,5 +97,12 @@
 	<module>../../../ftrace/features/net.sf.aftrace.feature</module>
 	<module>../../../ftrace/plugins/net.sf.lttng2.kernel.ui</module>
 	<module>../../../ftrace/features/net.sf.lttng2.feature</module>
+	<module>../../../ftrace/plugins/net.sf.aftrace.ftrace</module>
+	<module>
+		../../../ftrace/plugins/net.sf.aftrace.ftrace.service
+	</module>
+	<module>
+		../../../ftrace/features/net.sf.aftrace.ftrace.feature
+	</module>
 	</modules>
 </project>
