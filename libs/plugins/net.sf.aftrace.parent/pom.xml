@@ -96,5 +96,6 @@
 	<module>../../../ftrace/plugins/net.sf.aftrace.e4</module>
 	<module>../../../ftrace/features/net.sf.aftrace.feature</module>
 	<module>../../../ftrace/plugins/net.sf.lttng2.kernel.ui</module>
+	<module>../../../ftrace/features/net.sf.lttng2.feature</module>
 	</modules>
 </project>
