@@ -68,6 +68,9 @@
 	<module>../net.tourbook.chart.test</module>
 	<module>../net.tourbook.common</module>
 	<module>../net.tourbook.ext.jars</module>
-	<module>../../features/net.tourbook.chart.feature</module>
+	<module>../../../ftrace/plugins/net.sf.aftrace.chart</module>
+	<module>
+		../../../ftrace/features/net.sf.aftrace.chart.feature
+	</module>
 	</modules>
 </project>
