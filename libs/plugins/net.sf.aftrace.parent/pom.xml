@@ -104,5 +104,8 @@
 	<module>
 		../../../ftrace/features/net.sf.aftrace.ftrace.feature
 	</module>
+	<module>
+		../../../ftrace/plugins/net.sf.aftrace.parent.repository
+	</module>
 	</modules>
 </project>

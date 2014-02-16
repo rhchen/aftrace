@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
+   <feature url="features/net.sf.aftrace.chart.feature_1.0.0.qualifier.jar" id="net.sf.aftrace.chart.feature" version="1.0.0.qualifier">
+      <category name="aftrace.category"/>
+   </feature>
+   <feature url="features/net.sf.aftrace.feature_1.0.0.qualifier.jar" id="net.sf.aftrace.feature" version="1.0.0.qualifier">
+      <category name="aftrace.category"/>
+   </feature>
+   <feature url="features/net.sf.aftrace.ftrace.feature_1.0.0.qualifier.jar" id="net.sf.aftrace.ftrace.feature" version="1.0.0.qualifier">
+      <category name="aftrace.category"/>
+   </feature>
+   <feature url="features/net.sf.lttng2.feature_1.0.0.qualifier.jar" id="net.sf.lttng2.feature" version="1.0.0.qualifier">
+      <category name="aftrace.category"/>
+   </feature>
+   <feature url="features/net.sf.nexuslite.feature_1.0.0.qualifier.jar" id="net.sf.nexuslite.feature" version="1.0.0.qualifier">
+      <category name="aftrace.category"/>
+   </feature>
+   <category-def name="aftrace.category" label="aftrace features">
+      <description>
+         aftrace features
+      </description>
+   </category-def>
 </site>
