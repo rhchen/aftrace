@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="net.sf.aftrace.e4" id="net.sf.aftrace.e4.product" application="net.sf.aftrace.e4.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product name="net.sf.aftrace.e4" uid="aftrace.product" id="net.sf.aftrace.e4.product" application="net.sf.aftrace.e4.application" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -12,7 +12,6 @@
    </launcherArgs>
 
    <windowImages/>
-
 
    <launcher>
       <solaris/>
@@ -117,17 +116,17 @@
    </plugins>
 
    <features>
-      <feature id="org.eclipse.e4.rcp" version="1.2.1.v20130910-2014"/>
-      <feature id="org.eclipse.emf.common" version="2.9.1.v20130827-0309"/>
-      <feature id="org.eclipse.emf.ecore" version="2.9.1.v20130827-0309"/>
+      <feature id="org.eclipse.e4.rcp"/>
+      <feature id="org.eclipse.emf.common"/>
+      <feature id="org.eclipse.emf.ecore"/>
       <feature id="net.sf.aftrace.feature" version="1.0.0.qualifier"/>
-      <feature id="org.eclipse.linuxtools.tmf" version="2.1.0.qualifier"/>
+      <feature id="org.eclipse.linuxtools.tmf"/>
       <feature id="org.eclipse.linuxtools.ctf"/>
-      <feature id="org.eclipse.rse.terminals" version="1.2.100.201305201712"/>
-      <feature id="org.eclipse.rse.core" version="3.4.100.201305201712"/>
-      <feature id="org.eclipse.rse.ssh" version="3.0.500.201305201712"/>
-      <feature id="org.eclipse.rse.telnet" version="2.3.100.201305201712"/>
-      <feature id="org.eclipse.linuxtools.lttng2.kernel" version="2.1.0.qualifier"/>
+      <feature id="org.eclipse.rse.terminals"/>
+      <feature id="org.eclipse.rse.core"/>
+      <feature id="org.eclipse.rse.ssh"/>
+      <feature id="org.eclipse.rse.telnet"/>
+      <feature id="org.eclipse.linuxtools.lttng2.kernel"/>
       <feature id="net.sf.lttng2.feature" version="1.0.0.qualifier"/>
       <feature id="net.sf.nexuslite.feature" version="1.0.0.qualifier"/>
       <feature id="net.sf.aftrace.chart.feature" version="1.0.0.qualifier"/>
@@ -140,5 +139,10 @@
       <feature id="org.eclipse.linuxtools.lttng2"/>
    </features>
 
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
+   </configurations>
 
 </product>

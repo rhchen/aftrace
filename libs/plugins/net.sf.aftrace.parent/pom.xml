@@ -16,6 +16,9 @@
 		<tm-version>3.3</tm-version>
 		<tm-site>${download-site}/tm/updates/${tm-version}</tm-site>
 		
+		<lttng-version>2.1</lttng-version>
+		<lttng-site>http://archive.eclipse.org/linuxtools/update-${lttng-version}</lttng-site>
+		
 	</properties>
 
 	<repositories>
@@ -33,6 +36,11 @@
 		<repository>
 			<id>tm-${tm-version}</id>
 			<url>${tm-site}</url>
+			<layout>p2</layout>
+		</repository>
+		<repository>
+			<id>lttng-${lttng-version}</id>
+			<url>${lttng-site}</url>
 			<layout>p2</layout>
 		</repository>
 		
